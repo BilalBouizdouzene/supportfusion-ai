@@ -1,0 +1,12 @@
+# Install only the capabilities you explicitly need. None are downloaded by setup_local.ps1.
+PyMuPDF>=1.24,<2
+python-docx>=1.1,<2
+Pillow>=10,<12
+opencv-python-headless>=4.10,<5
+faiss-cpu==1.9.0.post1
+sentence-transformers==3.4.1
+transformers>=4.45,<5
+torch==2.15.0
+faster-whisper>=1.1,<2
+soundfile>=0.12,<1
+

@@ -1,0 +1,21 @@
+{
+  "LIGHT": {
+    "description": "CPU-first deterministic retrieval",
+    "retrieval": ["exact error boost", "BM25-style lexical ranking", "TF-IDF optional"],
+    "models": [],
+    "auto_download": false
+  },
+  "STANDARD": {
+    "description": "Hybrid retrieval with explicit local model opt-in",
+    "retrieval": ["BM25", "Sentence-Transformers", "FAISS CPU", "RRF", "Cross-Encoder"],
+    "models": ["sentence-transformers", "cross-encoder", "compact OCR"],
+    "auto_download": false
+  },
+  "ADVANCED": {
+    "description": "Cross-modal evidence-grounded support copilot",
+    "retrieval": ["cross-modal fusion", "FAISS", "RRF", "reranking", "conversation memory"],
+    "models": ["vision encoder", "faster-whisper", "Ollama provider"],
+    "auto_download": false
+  }
+}
+
